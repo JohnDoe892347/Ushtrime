@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>a b c d or e</title>
+</head>
+<body>
+<p>Guess a b c d or e</p>
+<input id = "input" type = "text">
+<p id = "demo"></p>
+<button id = "btn">Click me</button>
+
+
+
+ <script>
+		let btn = document.getElementById("btn");
+		let input =  document.getElementById("input");
+		let text;
+		
+		btn.addEventListener('click',function(){
+		
+		let inputValue = document.getElementById("input").value;
+		
+		if(inputValue == "c"){
+		text = "Correct";
+		
+		}
+		else if (inputValue == "b" || inputValue == "d"){
+		text = "Close but not close enough";
+		
+		}
+		else{
+		text = "Nope";
+		}
+		 let x = document.getElementById("demo").innerHTML = text;
+		})
+		
+ 
+ 
+ 
+ 
+ </script>
+</body>
+</html>
